@@ -4,12 +4,15 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
+
 link = "https://obrazoval.ru/"
 
+browser = webdriver.Chrome()
+browser.get(link)
+browser.maximize_window()
+
 try:
-    browser = webdriver.Chrome()
-    browser.get(link)
-    browser.maximize_window()
+
 
    # button_search = browser.find_element_by_class_name('l-search__button.b-btn.absolute') --другая версия поиска
     button_search = WebDriverWait(browser, 20).until(
