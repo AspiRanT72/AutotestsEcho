@@ -1,2 +1,2 @@
-LOGIN = 'your_login'
-PASSWORD = 'your_password'
+LOGIN = 'ashmarinqa@gmail.com'
+PASSWORD = '123123'
