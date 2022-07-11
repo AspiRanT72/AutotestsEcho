@@ -31,7 +31,10 @@ WebDriverWait(browser, 10).until(EC.visibility_of(element_notification))
 i = element_notification.text
 print(i)
 
-vishel()
+time.sleep(3)
+browser.close()
+time.sleep(1)
+browser.quit()
 
 if __name__=='__main__':
     main()

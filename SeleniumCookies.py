@@ -35,7 +35,10 @@ element_pass.send_keys(PASSWORD)
 element_next.click()
 pickle.dump(browser.get_cookies(), open(f'{LOGIN_EMAIL}_cookies', 'wb'))
 
-vishel()
+time.sleep(3)
+browser.close()
+time.sleep(1)
+browser.quit()
 
 if __name__=='__main__':
     main()

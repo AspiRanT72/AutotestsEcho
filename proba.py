@@ -30,8 +30,10 @@ button_compare1 = browser.find_elements(By.XPATH, '//div[@class="b-courses-save_
 button_compare2 = browser.find_elements(By.XPATH, '//div[@class="b-courses-save__icon"]')[4].click()
 
 
-
-vishel()
+time.sleep(3)
+browser.close()
+time.sleep(1)
+browser.quit()
 
 if __name__=='__main__':
     main()
